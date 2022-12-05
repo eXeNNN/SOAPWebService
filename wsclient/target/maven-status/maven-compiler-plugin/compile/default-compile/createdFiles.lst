@@ -1,0 +1,14 @@
+com\wsclient\AddResponse.class
+com\wsclient\Add.class
+com\wsclient\AddnumberResponse.class
+com\wsclient\Multiplynumber.class
+com\wsclient\MultiplynumberResponse.class
+com\wsclient\DividenumberResponse.class
+com\wsclient\HelloWorld.class
+com\wsclient\HelloWorldImplService.class
+com\wsclient\Addnumber.class
+com\wsclient\Restnumber.class
+com\wsclient\Dividenumber.class
+com\wsclient\package-info.class
+com\wsclient\RestnumberResponse.class
+com\wsclient\ObjectFactory.class

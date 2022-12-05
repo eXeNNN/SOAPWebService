@@ -6,8 +6,36 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>wsclient</artifactId>
+  
+  <build>
+  
+  	<plugins>
+ 
+  		<plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>jaxws-maven-plugin</artifactId>
+           <version>2.6</version>
+           <executions>
+               <execution>
+                   <id>generate-sources</id>
+                   <phase>generate-sources</phase>
+                   <goals>
+                      <goal>wsimport</goal>
+                   </goals>
+                   <configuration>
+                       <packageName>com.wsclient</packageName>
+                       <wsdlDirectory>${project.basedir}/src/main/resources/</wsdlDirectory>
+                       <sourceDestDir>${project.basedir}/src/main/java/</sourceDestDir>
+                    </configuration>
+                 </execution>
+              </executions>
+          </plugin>
 
-	<properties>
+  	</plugins>
+  	
+  </build>
+  
+  <properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
